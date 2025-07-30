@@ -25,5 +25,4 @@ if (typeof(ageNumber) !== "number" || isNaN(ageNumber)) {
 } else
   if (ageNumber >= maxAge) {
   console.log("Keep calm and watch culture channel");
-} else
-  console.log("Technical work");
+} else (console.log("Technical work"));
