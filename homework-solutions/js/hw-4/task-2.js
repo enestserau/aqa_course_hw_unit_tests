@@ -17,13 +17,13 @@
 
 let minAge = 18;
 let maxAge = 60;
-const age = 61;
+const age = 55;
 
-if (typeof(age) !== "number") {
+if (typeof(age) !== "number" || isNaN(age)) {
   console.log("Incorrect data type");
 } else if (age < minAge) {
   console.log("You don't have access cause your age is " + age + " It's less then " + minAge);
-} else if (age <= maxAge && age >= minAge) {
+} else if (age < maxAge && age >= minAge) {
   console.log("Welcome");
 } else if (age > maxAge) {
   console.log("Keep calm and watch culture channel");
