@@ -6,8 +6,12 @@
   Пример: const arr = [5,2,7,3,8,1,6] //4
 */
 
+const numbers = [5, 2, 7, 3, 8, 1, 6];
+
 function findMissingNumber(numbers) {
-  // Ваш код
+  const n = numbers.length + 1;
+  const expected = Array.from({ length: n }, (_, i) => i + 1); // создаем ожидаемый массив по типу [1, 2, ..., N]
+  return expected.find((num) => !numbers.includes(num));
 }
 
 export { findMissingNumber };
