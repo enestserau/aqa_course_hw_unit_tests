@@ -22,10 +22,10 @@ function isPalindrom(word) {
 function findLongestWords(sentence) {
   if (typeof sentence !== 'string' || sentence.length === 0) return [];
 
-  var words = sentence.trim().split(/\s+/);
+  let words = sentence.trim().split(/\s+/);
   if (words.length === 0) return [];
 
-  var maxLen = 0;
+  let maxLen = 0;
   for (var i = 0; i < words.length; i++) {
     if (words[i].length > maxLen) {
       maxLen = words[i].length;
