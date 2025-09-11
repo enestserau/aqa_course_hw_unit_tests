@@ -7,12 +7,12 @@
     - Массив строк: переменная cities, значения ["Minsk", "Warsaw", "London"].
     - Объект: переменная person, объект с полями name: "Alice", age: 30, city: "Minsk". */
 
-let num1: number = 42;
-let str: string = "Hello, TypeScript!";
-let isComplete: boolean = true;
-let numbers: number[] = [1, 2, 3, 4, 5];
-let cities: Array<string> = ["Minsk", "Warsaw", "London"];
-let person: { name: string, age: number, city: string } = { name: "Alice", age: 30, city: "Minsk" };
+const num1: number = 42;
+const str: string = "Hello, TypeScript!";
+const isComplete: boolean = true;
+const numbers: number[] = [1, 2, 3, 4, 5];
+const cities: Array<string> = ["Minsk", "Warsaw", "London"];
+const person: { name: string, age: number, city: string } = { name: "Alice", age: 30, city: "Minsk" };
 
 /*2. Создайте псевдонимы типов:
     - Тип User, который содержит поля name (строка), age (число), и опциональное поле email (строка).
@@ -50,13 +50,13 @@ console.log(BMW);
     - Интерфейса Address с полями street (строка), city (строка), и zipCode (число).
     - Интерфейса FullAddress, который наследует интерфейс Address и добавляет поле country (строка). */
 
-interface Address {
+interface IAddress {
     street: string;
     city: string;
     zipCode: number;
 };
 
-interface fullAddress extends Address {
+interface IfullAddress extends IAddress {
     country: string;
 };
 
