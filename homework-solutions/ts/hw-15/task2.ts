@@ -55,7 +55,7 @@ class Car extends Vehicle {
   4. Создайте объект класса Car и проверьте работоспособность
   */
 
-let BMW = new Car('BMW', '5 series', 2025);
+const BMW = new Car('BMW', '5 series', 2025);
 console.log(BMW);
 console.log(BMW.start());
 console.log(BMW.getDetails());
